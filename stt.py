@@ -48,7 +48,7 @@ def speech_to_text_aai():
     try:
         audio_url = request.form.get('audio_url')
         
-        aai.settings.api_key = 'ef1050f1b2b043b9a8bf6d7f1698d37b'
+        aai.settings.api_key = 'KEY_AAI'
         transcriber = aai.Transcriber()
         transcript = transcriber.transcribe(audio_url)
         text = transcript.text
